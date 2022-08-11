@@ -1,72 +1,73 @@
 //CONSULTOR DE PRECIO
-class Productos {
-    constructor(nombre, precio, stock) {
-        this.nombre = nombre;
-        this.precio = precio;
-        this.stock = stock;
-    }
-    precio2() {
-        alert("el precio del " + this.nombre + " es de: " + this.precio)
+const listasneakers = [
+    {
+        nombre: "jordan1",
+        precio: "2000$",
+        talle: "40",
+    },
+    {
+        nombre: "jordan1h",
+        precio: "2200$",
+        talle: "39",
+    },
+    {
+        nombre: "Nikeairmax ",
+        precio: "1800$",
+        talle: "43",
+    },
+    {
+        nombre: "Airforce1",
+        precio: "1000$",
+        talle: "44",
+    },
+    {
+        nombre: "Addidasyezzy",
+        precio: "2500$",
+        talle: "42",
+    },
+    {
+        nombre: "jordan4",
+        precio: "4000$",
+        talle: "40",
+    },
+]
+
+
+let Sneakers = ""
+while (Sneakers != "SALIR") {
+    Sneakers = prompt("ingrese CONSULTAR|COMPRAR|SALIR")
+    switch (Sneakers) {
+        case "CONSULTAR":
+            consultarprecios()
+            break;
+        case "COMPRAR":
+            comprasneakers()
+            break;
+        case "SALIR":
+            break;
+        default:
+            alert("ingrese una accion valida:")
+            Sneakers
     }
 }
+function consultarprecios() {
+    alert("Los Sneakers disponibles son: ")
+    listasneakers.forEach((sneaker) => {
+        alert(sneaker.nombre + " " + sneaker.precio + " talle disponible:" + sneaker.talle)
+    })
 
-//lista de productos
-
-const producto1 = new Productos("producto1", 2000, true)
-const producto2 = new Productos("producto2", 3000, true)
-const producto3 = new Productos("producto3", 4000, false)
-const producto4 = new Productos("producto4", 670, true)
-const producto5 = new Productos("producto5", 3500, true)
-const producto6 = new Productos("producto6", 4760, false)
-const producto7 = new Productos("producto7", 2070, true)
-const producto8 = new Productos("producto8", 3000, true)
-const producto9 = new Productos("producto9", 4450, false)
-const producto10 = new Productos("producto10", 200, true)
-
-let consulta = parseInt(prompt("ingrese el numero de un producto:"))
-
-switch (consulta) {
-    case 1:
-        console.log(producto1)
-        producto1.precio2();
-        break;
-    case 2:
-        console.log(producto2)
-        producto2.precio2();
-        break;
-    case 3:
-        console.log(producto3)
-        producto3.precio2();
-        break;
-    case 4:
-        console.log(producto4)
-        producto4.precio2();
-        break;
-    case 5:
-        console.log(producto5)
-        producto5.precio2();
-        break;
-    case 6:
-        console.log(producto6)
-        producto6.precio2();
-        break;
-    case 7:
-        console.log(producto7)
-        producto7.precio2();
-        break;
-    case 8:
-        console.log(producto8)
-        producto8.precio2();
-        break;
-    case 9:
-        console.log(producto9)
-        producto9.precio2();
-        break;
-    case 10:
-        console.log(producto10)
-        producto10.precio2();
-        break;
-    default:
-        alert("Producto encontrado")
-        break;
+}
+function comprasneakers() {
+    let compradesnkeakers = prompt("ingrese el snkeaker que desee:")
+    const snkeakerelegido = listasneakers.find((sneaker) => {
+        return sneaker.nombre == compradesnkeakers
+    })
+    if (snkeakerelegido) {
+        console.log("sneakers en el carrito")
+        console.log(snkeakerelegido)
+    } else {
+        {
+            console.log("no encontramos resultados")
+        }
+    }
 }
