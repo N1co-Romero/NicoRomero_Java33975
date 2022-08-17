@@ -1,17 +1,22 @@
 body {
-    background-color: black;
-
+    padding: auto;
+    margin: auto;
 
 }
 
 h1 {
-    color: white;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-p {
-    color: white;
+.remeras {
+    display: flex;
+    padding: 50px;
 }
 
-h2 {
-    width: 200;
+
+
+.zapatillas {
+    display: flex;
+    padding: 50px;
 }

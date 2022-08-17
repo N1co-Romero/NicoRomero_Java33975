@@ -1,4 +1,5 @@
 //CONSULTOR DE PRECIO
+/*
 const listasneakers = [
     {
         nombre: "jordan1",
@@ -71,3 +72,61 @@ function comprasneakers() {
         }
     }
 }
+*/
+//EVENTOS
+(function () {
+    //CONSTRUCTOR REMERAS
+    function Remeras(precio, talle) {
+        this.precio = precio
+        this.talle = talle
+    }
+
+    let remera1 = new Remeras(500, "XL")
+    let remera2 = new Remeras(650, "L")
+    let remera3 = new Remeras(800, "S")
+
+    let agregar1 = function () {
+        alert("haz añadido el producto a tu carrito")
+    }
+
+    let boton1 = document.getElementById('boton1');
+    boton1.addEventListener("click", agregar1)
+
+    let info1 = function () {
+        alert("Remera gucci $" + remera1.precio + " talle: " + remera1.talle)
+    }
+
+    let boton4 = document.getElementById('boton4');
+    boton4.addEventListener("click", info1)
+
+    let agregar2 = function () {
+        alert("haz añadido el producto a tu carrito")
+    }
+
+    let boton2 = document.getElementById('boton2');
+    boton2.addEventListener("click", agregar2)
+
+    let info2 = function () {
+        alert("Remera gucci tiger $" + remera2.precio + " talle: " + remera2.talle)
+    }
+
+    let boton5 = document.getElementById('boton5');
+    boton5.addEventListener("click", info2)
+
+    let info3 = function () {
+        alert("Remera gucci wolf $" + remera3.precio + " talle: " + remera3.talle)
+    }
+
+    let boton6 = document.getElementById('boton6');
+    boton6.addEventListener("click", info3)
+
+    let agregar3 = function () {
+        alert("haz añadido el producto a tu carrito")
+    }
+    let boton3 = document.getElementById('boton3');
+    boton3.addEventListener("click", agregar3)
+})()
+
+
+
+
