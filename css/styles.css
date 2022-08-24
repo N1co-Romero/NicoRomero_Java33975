@@ -3,20 +3,3 @@ body {
     margin: auto;
 
 }
-
-h1 {
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.remeras {
-    display: flex;
-    padding: 50px;
-}
-
-
-
-.zapatillas {
-    display: flex;
-    padding: 50px;
-}
