@@ -3,36 +3,36 @@
         "precio": 1500,
         "id": 1,
         "title": "remera1",
-        "thumbnailUrl": "https://picsum.photos/id/0/600"
+        "thumbnailUrl": "https://picsum.photos/id/54/600"
     },
     {
         "precio": 3400,
         "id": 2,
         "title": "remera2",
-        "thumbnailUrl": "https://picsum.photos/id/10/600"
+        "thumbnailUrl": "https://picsum.photos/id/12/600"
     },
     {
         "precio": 2200,
         "id": 3,
         "title": "remera3",
-        "thumbnailUrl": "https://picsum.photos/id/20/600"
+        "thumbnailUrl": "https://picsum.photos/id/23/600"
     },
     {
         "precio": 50,
         "id": 4,
         "title": "remera4",
-        "thumbnailUrl": "https://picsum.photos/id/30/600"
+        "thumbnailUrl": "https://picsum.photos/id/370/600"
     },
     {
         "precio": 1000,
         "id": 5,
         "title": "remera5",
-        "thumbnailUrl": "https://picsum.photos/id/40/600"
+        "thumbnailUrl": "https://picsum.photos/id/475/600"
     },
     {
         "precio": 1520,
         "id": 6,
         "title": "remera6",
-        "thumbnailUrl": "https://picsum.photos/id/50/600"
+        "thumbnailUrl": "https://picsum.photos/id/54/600"
     }
 ]
