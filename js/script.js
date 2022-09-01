@@ -58,7 +58,7 @@ const setCarrito = objeto => {
         precio: objeto.querySelector('p').textContent
     }
     Swal.fire({
-        title: 'Genial!',
+        title: 'LISTO',
         text: 'Se a añadido el producto' + prodcuto.title + ' al carrito',
         icon: 'success',
         confirmButtonText: 'Cool'
